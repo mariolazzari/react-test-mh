@@ -67,3 +67,20 @@ This will start the back-end process at `http://localhost:3000`. If port 3000 is
 
 - json-server.json
 - src/main.tsx
+
+## Testing components
+
+- How they render
+- How they respond to uuser actions
+- Test behaviors, not implementations
+- Ignore styles
+
+### Test types
+
+- Unit testing: test single component in isolation
+- Integration testing: test interaction between more components
+  - More robust
+  - more confidebce
+  - Slower
+- E2E testing: program flows
+  
