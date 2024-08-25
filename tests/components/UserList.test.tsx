@@ -14,13 +14,12 @@ describe("Users list", () => {
       { id: 1, name: "Mario", isAdmin: true },
       { id: 2, name: "Mariarosa" },
     ];
-
     render(<UserList users={users} />);
 
-    users.forEach(user => {
-      const link = screen.getByRole("link", { name: user.name });
+    users.forEach(({ id, name }) => {
+      const link = screen.getByRole("link", { name });
       expect(link).toBeInTheDocument();
-      expect(link).toHaveAttribute("href", `/users/${user.id}`);
+      expect(link).toHaveAttribute("href", `/users/${id}`);
     });
   });
 });

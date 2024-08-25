@@ -1,8 +1,9 @@
 // import Onboarding from "../components/Onboarding";
-import TermsAndConditions from "../components/TermsAndConditions";
+// import TermsAndConditions from "../components/TermsAndConditions";
+import ExpandableText from "../components/ExpandableText";
 
 const PlaygroundPage = () => {
-  return <TermsAndConditions />;
+  return <ExpandableText text="Short text" />;
 };
 
 export default PlaygroundPage;
